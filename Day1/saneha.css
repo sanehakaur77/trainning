@@ -1,0 +1,25 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    gap:10px;
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: aqua;
+}
+@media screen and (max-width:450px) {
+    .container{
+        flex-wrap: wrap;
+        flex-direction: column;
+        gap:50px;
+
+    }
+}
