@@ -1,25 +1,118 @@
 *{
+    margin:0;
     padding: 0;
-    margin: 0;
-    box-sizing: border-box;
 }
-.container{
+body{
+    min-height: 100vh;
+    background-image: Url("laptop.jpeg");
+    background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: sans-serif;
+}
+nav{
+background-color: white;
+box-shadow: 3px 3px 5px  rgba(0,0,0,0.1);
+}
+nav ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+
+nav li{
+    height: 50px;
+}
+nav a{
+    height: 100%;
+    padding: 0 30px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    gap:10px;
+    text-decoration: none;
+    color: black;
+   
 }
-.box{
-    height: 100px;
-    width: 100px;
-    background-color: aqua;
+nav a:hover{
+    background-color: aliceblue;
 }
-@media screen and (max-width:450px) {
-    .container{
-        flex-wrap: wrap;
-        flex-direction: column;
-        gap:50px;
+nav a:hover{
+    background-color: #f1f1f1;
+}
+.navlinks li:first-child{
+    margin-right: auto;
+    display: flex;
+    align-items: center;
+   
 
+}
+.sidebar{
+    position: fixed;
+    top:0;
+    right: -250px;
+    height: 100vh;
+    width: 250px;
+    background-color: rgba(0,0,0,0.2);
+    backdrop-filter: blur(20px);
+    display: flex;
+    flex-direction: column;
+    z-index: 999;
+    justify-content: flex-start;
+  padding-top: 10px;
+  transition: 0.5s ease;
+
+}
+.sidebar.active{
+    right: 0;
+}
+.sidebar.hide{
+    right:-250px;
+}
+.sidebar li a:hover{
+  background-color:#f1f1f1;
+}
+.sidebar li{
+    width: 100%;
+}
+#btn{
+    height: 30px;
+    width: 30px;
+    font-size: 25px;
+    position: relative;
+   transition: right 0.3s ease;
+}
+#btn:hover{
+    background-color: black;
+    color: aliceblue;
+}
+.sidebar.active{
+    right:0;
+}
+.navlinks li i {
+    font-size: 26px;
+    position: relative;
+    top:10px;
+    right:10px;
+   
+}
+#button{
+    display: none;
+}
+
+
+@media  (max-width:620px) {
+    .navlinks li{
+        display: none;
     }
+    .navlinks li:last-child{
+        display: block;
+       
+    }
+   #button {
+    display: block;
+   }
+    
 }
