@@ -6,7 +6,7 @@ body{
     min-height: 100vh;
     background-image: Url("laptop.jpeg");
     background-size: cover;
-    background-size: cover;
+   
     background-repeat: no-repeat;
     background-position: center;
     font-family: sans-serif;
@@ -14,13 +14,16 @@ body{
 nav{
 background-color: white;
 box-shadow: 3px 3px 5px  rgba(0,0,0,0.1);
+display: flex;
+
+
 }
 nav ul{
     width: 100%;
     list-style: none;
     display: flex;
     justify-content: flex-end;
-    align-items: center;
+      
 }
 
 

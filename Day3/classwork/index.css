@@ -1,0 +1,11 @@
+.box{
+    height: 300px;
+    width: 500px;
+    border: 2px solid green;
+    padding-top: 300px;
+    text-align: center;
+}
+.box p{
+ display: inline;
+ 
+}
