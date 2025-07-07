@@ -71,7 +71,7 @@ nav a:hover{
 .sidebar.active{
     right: 0;
 }
-.sidebar.hide{
+.sidebar.hidden{
     right:-250px;
 }
 .sidebar li a:hover{

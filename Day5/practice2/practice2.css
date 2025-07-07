@@ -1,0 +1,14 @@
+.container{
+    display: grid;
+     width: 80%;
+     border: 2px solid green;
+     grid-template-columns: 30% 70%;
+     row-gap: 10px;
+     column-gap: 20px;
+     height: 600px;
+}
+.box{
+ 
+    border: 2px solid green;
+    padding:12px;
+}

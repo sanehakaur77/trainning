@@ -1,0 +1,19 @@
+
+#parent{
+width:80%;
+border:2px solid green;
+display: grid;
+grid-template-columns: repeat(4,1fr);
+}
+.box{
+    height: 200px;
+    width: 300px;
+    border:2px solid red;
+}
+#parent>div:nth-child(6){
+    color: aqua;
+}
+#parent>div:nth-child(5){
+grid-area: 2/3/4/5;
+}
+

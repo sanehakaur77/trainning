@@ -1,0 +1,111 @@
+:root{
+    --primary-color:green;
+    --main-color:red;
+    --primary-color:teal;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#parent{
+    width:85%;
+     height: 600px;
+    border:2px solid black;
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    gap:10px;
+    background-color: rgb(196, 193, 193);
+    margin: auto;
+}
+.box{
+border:2px solid green;
+
+ border-radius: 10px;
+ 
+}
+#parent>div:first-child{
+    background-color: var(--main-color);
+}
+#parent>div:nth-child(2){
+    grid-area: 1/2/2/4;
+    background-color: yellow;
+}
+#parent>div:nth-child(3){
+    background-color:pink;
+}
+#parent>div:nth-child(4){
+    background-color: darkgreen;
+}
+#parent>div:nth-child(5){
+    background-color:aqua;
+}
+#parent>div:nth-child(6){
+    grid-area: 2/3/4/5;
+    background-color: greenyellow;
+}
+    #parent>div:nth-child(7){
+        grid-area: 3/1/6/2;
+        background-color: var(--primary-color);
+    }
+  
+ #parent>div:nth-child(8){
+       background-color: grey;
+    }
+    #parent>div:nth-child(9){
+        background-color:blue;
+        grid-area:4/2/7/3 ;
+    }
+     #parent>div:nth-child(10){
+        background-color:rgb(1,29,1);
+       
+    }
+     #parent>div:nth-child(13){
+        background-color:rgb(35,3,3);
+      
+    }
+     #parent>div:nth-child(14){
+       background-color:gray;
+    }
+    #parent>div:nth-child(12){
+      background-color: brown;
+    }
+     #parent>div:nth-child(11){
+        background-color:goldenrod;
+        grid-area:4/4/7/5 ;
+    }
+   @media (max-width:1000px) {
+    #parent{
+width:85%;
+  
+    grid-template-columns: repeat(3,1fr);
+     
+    }
+      #parent>div:first-child{
+    background-color: var(--primary-color);
+}
+#parent>div:nth-child(2){
+    grid-area: 1/2/2/4;
+    background-color:var(--primary-color);
+}
+#parent>div:nth-child(3){
+    background-color:var(--primary-color);
+}
+   }
+    @media (max-width:500px) {
+    #parent{
+width:85%;
+  
+    grid-template-columns: repeat(2,1fr);
+    height: 1000px;
+     
+     
+    }
+  
+   }
+
+    
+    
+

@@ -1,0 +1,50 @@
+ body {
+      background-color: #eaeaea;
+      font-family: sans-serif;
+      display: flex;
+      justify-content: center;
+      padding: 40px;
+    }
+
+    .keyboard {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      background-color: #333;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    }
+
+    .row2 div{
+     width: 13.5px;
+    }
+    
+    .row3 div{
+     width: 12.5px;
+    }
+    .row {
+      display: flex;
+      gap: 6px;
+    }
+    .row div:hover{
+        background-color: #eaeaea;
+        color: black;
+        transition: 0.5s ease;
+    }
+
+    .key {
+      background-color: #444;
+      color: #fff;
+      padding: 10px 14px;
+      border-radius: 4px;
+      text-align: center;
+      font-size: 14px;
+      box-shadow: inset 0 -2px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    .key.wide { width: 60px; }
+    .key.wider { width: 80px; }
+    .key.space { width: 250px; }
+
+    .key.fn { background-color: #222; color: #00e676; }
