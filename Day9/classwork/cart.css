@@ -1,0 +1,34 @@
+#container{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap:10px;
+}
+
+.btn{
+    cursor: pointer;
+    background-color: rgb(108, 179, 233);
+    color: aliceblue;
+    height: 40px;
+    width: 200px;
+    border-radius: 7px;
+   margin-bottom: 10px;
+   
+}
+.btn2{
+    margin-left: auto;
+}
+.product-box>img:hover{
+    animation: rotate 2s linear infinite; 
+    cursor: pointer;
+}
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+

@@ -87,16 +87,18 @@
         // let name1=name.split(" ");
         // console.log(name1);
         // console.log(name[8]);
-        function mainFunction(){
-            let firstName="Varsha";
-            let lastName="Rani";
-            function nestedFunction(){
-                console.log(firstName,lastName);
-            }
-            nestedFunction();
-        }
-        mainFunction();
-        let a="4+3+3";
-        console.log(eval(a));
+        // function mainFunction(){
+        //     let firstName="Varsha";
+        //     let lastName="Rani";
+        //     function nestedFunction(){
+        //         console.log(firstName,lastName);
+        //     }
+        //     nestedFunction();
+        // }
+        // mainFunction();
+        // let a="4+3+3";
+        // console.log(eval(a));
+        //  IIFE
+        
 
        

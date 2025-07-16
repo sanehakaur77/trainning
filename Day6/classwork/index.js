@@ -1,28 +1,28 @@
-console.log("hello");
 const keys=document.querySelectorAll('.key');
+const input=document.getElementById('input');
 let expression="";
 keys.forEach((key)=>{
   key.addEventListener('click',()=>{
-    
-    let value =key.innerText;
-    if(value==="="){
-        try{
-            expression=eval(expression);
-        }
-        catch(err){
-            expression="Error";
-        }
+      let value=key.textContent;
+  if(value==="="){
+    try{
+    expression=eval(expression);
+    input.value=expression;
+       
     }
-    else if(value==="C"){
-        expression="";
+    catch{
+     expression="Error";
+     input.value=expression;
+    }
+  }
+  else if(value==="C"){
+    expression="";
+    input.value=expression;
+  }
+  
+    else{
+        expression+=value;
         input.value=expression;
     }
-  else{
-    expression+=value;
-  }
-  input.value=expression;
-    
-    
-  })
-    
+})
 })
